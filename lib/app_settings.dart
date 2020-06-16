@@ -61,6 +61,11 @@ class AppSettings {
     _channel.invokeMethod('battery_optimization');
   }
 
+  /// Future async method call to open nfc settings.
+  static Future<void> openNFCSettings() async {
+    _channel.invokeMethod('nfc');
+  }
+
   /// Future async method call to open app specific settings screen.
   static Future<void> openAppSettings() async {
     _channel.invokeMethod('app_settings');
